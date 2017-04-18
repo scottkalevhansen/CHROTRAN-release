@@ -1,0 +1,282 @@
+
+ ! ************************************************************************** !
+
+ Initial Basis
+
+ Primary Species:
+  molasses
+    Charge:   0.00
+    Molar Mass:    0.0000 [g/mol]
+    Debye-Huckel a0:    0.0000 [Angstrom]
+
+  Cr(VI)
+    Charge:   0.00
+    Molar Mass:    0.0000 [g/mol]
+    Debye-Huckel a0:    0.0000 [Angstrom]
+
+  ethanol
+    Charge:   0.00
+    Molar Mass:    0.0000 [g/mol]
+    Debye-Huckel a0:    0.0000 [Angstrom]
+
+  biocide
+    Charge:   0.00
+    Molar Mass:    0.0000 [g/mol]
+    Debye-Huckel a0:    0.0000 [Angstrom]
+
+
+ Secondary Species: None
+
+ Gas Components: None
+
+ Minerals:
+  chubbite
+    Molar Mass:    1.0000 [g/mol]
+    Molar Volume:  1.0000E-06 [m^3/mol]
+    Mineral Reaction: 
+        -1.0000  chubbite                        
+      logK:     0.0000     0.0000     0.0000     0.0000     0.0000     0.0000     0.0000     0.0000
+
+
+ Surface Complexation Reactions: None
+
+   Surface Complexes: None
+
+ Ion Exchange Reactions: None
+
+ ! ************************************************************************** !
+
+
+ ! ************************************************************************** !
+
+ Final Basis
+
+ Primary Species:
+  molasses
+    Charge:   0.00
+    Molar Mass:    0.0000 [g/mol]
+    Debye-Huckel a0:    0.0000 [Angstrom]
+
+  Cr(VI)
+    Charge:   0.00
+    Molar Mass:    0.0000 [g/mol]
+    Debye-Huckel a0:    0.0000 [Angstrom]
+
+  ethanol
+    Charge:   0.00
+    Molar Mass:    0.0000 [g/mol]
+    Debye-Huckel a0:    0.0000 [Angstrom]
+
+  biocide
+    Charge:   0.00
+    Molar Mass:    0.0000 [g/mol]
+    Debye-Huckel a0:    0.0000 [Angstrom]
+
+
+ Secondary Species: None
+
+ Gas Components: None
+
+ Minerals:
+  chubbite
+    Molar Mass:    1.0000 [g/mol]
+    Molar Volume:  1.0000E-06 [m^3/mol]
+    Mineral Reaction: 
+        -1.0000  chubbite                        
+      logK:     0.0000     0.0000     0.0000     0.0000     0.0000     0.0000     0.0000     0.0000
+
+
+ Surface Complexation Reactions: None
+
+   Surface Complexes: None
+
+ Ion Exchange Reactions: None
+
+ ! ************************************************************************** !
+
+--------------------------------------------------------------------------------
+
+     4  Primary Species
+
+              molasses              Cr(VI)                ethanol             
+              biocide             
+
+     0  Secondary Complex Species
+
+
+
+     0  Active Gas Species
+
+
+
+     0  Passive Gas Species
+
+
+
+     1  Reference Minerals
+
+              chubbite            
+
+     1  Kinetic Mineral Reactions
+
+              chubbite            
+
+     0  Ion Exchange Reactions
+
+     0  Ion Exchange Cations
+--------------------------------------------------------------------------------
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+  Initial Condition
+
+--------------------------------------------------------------------------------
+          Flow Condition:   initial
+     Transport Condition:   initial
+                  Region:   all
+--------------------------------------------------------------------------------
+
+  Flow Condition: initial
+    Synchronize time with update: no
+    Time units: yr
+    Length units: m
+      Datum:
+
+    Sub Condition: pressure
+      Type: dirichlet
+      Gradient:
+      Data:
+        Dataset: Unnamed Ascii Dataset
+          Type: dataset_ascii_type
+          Transient: no
+          Array Rank:  1
+
+--------------------------------------------------------------------------------
+
+  Transport Condition: initial
+
+  Constraint: initial
+  ----------------------------------------------------------------------------
+        iterations:     9
+    ionic strength:   0.0000E+00 [mol/L]
+    charge balance:   0.0000E+00
+          pressure:   9.7890E+06 [Pa]
+       temperature:    25.00 [C]
+       density H2O:  1001.47 [kg/m^3]
+ ln / activity H2O:   0.0000E+00  1.0000E+00    [---]
+ mole fraction H2O:   1.0000E+00    [---]
+ mass fraction H2O:   1.0000E+00    [---]
+  ----------------------------------------------------------------------------
+
+  primary               free        total
+  species               molal       molal       act coef     constraint
+  ----------------------------------------------------------------------------
+  molasses              9.9853E-21  9.9853E-21  1.0000E+00    total aq
+  Cr(VI)                1.9202E-05  1.9202E-05  1.0000E+00    total aq
+  ethanol               9.9853E-21  9.9853E-21  1.0000E+00    total aq
+  biocide               9.9853E-21  9.9853E-21  1.0000E+00    total aq
+
+  mineral                             log SI       Affinity     log K
+                                                   [kJ/mol]
+  ----------------------------------------------------------------------------
+  chubbite                             -0.0000      0.0000    0.0000E+00
+
+
+--------------------------------------------------------------------------------
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+  Boundary Condition
+
+--------------------------------------------------------------------------------
+          Flow Condition:   initial
+     Transport Condition:   inlet
+                  Region:   west
+--------------------------------------------------------------------------------
+
+  Flow Condition: initial
+    Synchronize time with update: no
+    Time units: yr
+    Length units: m
+      Datum:
+
+    Sub Condition: pressure
+      Type: dirichlet
+      Gradient:
+      Data:
+        Dataset: Unnamed Ascii Dataset
+          Type: dataset_ascii_type
+          Transient: no
+          Array Rank:  1
+
+--------------------------------------------------------------------------------
+
+  Transport Condition: inlet
+
+  Constraint: inlet
+  ----------------------------------------------------------------------------
+        iterations:     9
+    ionic strength:   0.0000E+00 [mol/L]
+    charge balance:   0.0000E+00
+          pressure:   9.7890E+06 [Pa]
+       temperature:    25.00 [C]
+       density H2O:  1001.47 [kg/m^3]
+ ln / activity H2O:   0.0000E+00  1.0000E+00    [---]
+ mole fraction H2O:   1.0000E+00    [---]
+ mass fraction H2O:   1.0000E+00    [---]
+  ----------------------------------------------------------------------------
+
+  primary               free        total
+  species               molal       molal       act coef     constraint
+  ----------------------------------------------------------------------------
+  molasses              9.9853E-21  9.9853E-21  1.0000E+00    total aq
+  Cr(VI)                1.9202E-05  1.9202E-05  1.0000E+00    total aq
+  ethanol               9.9853E-21  9.9853E-21  1.0000E+00    total aq
+  biocide               9.9853E-21  9.9853E-21  1.0000E+00    total aq
+
+  mineral                             log SI       Affinity     log K
+                                                   [kJ/mol]
+  ----------------------------------------------------------------------------
+  chubbite                             -0.0000      0.0000    0.0000E+00
+
+
+--------------------------------------------------------------------------------
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+  Boundary Condition
+
+--------------------------------------------------------------------------------
+          Flow Condition:   east
+     Transport Condition:   outlet
+                  Region:   east
+--------------------------------------------------------------------------------
+
+  Flow Condition: east
+    Synchronize time with update: no
+    Time units: yr
+    Length units: m
+      Datum:
+
+    Sub Condition: pressure
+      Type: dirichlet
+      Gradient:
+      Data:
+        Dataset: Unnamed Ascii Dataset
+          Type: dataset_ascii_type
+          Transient: no
+          Array Rank:  1
+
+--------------------------------------------------------------------------------
+
+  Transport Condition: outlet
+
+  Constraint: inlet
+  ----------------------------------------------------------------------------
+        iterations:     9
+    ionic strength:   0.0000E+00 [mol/L]
+    charge balance:   0.0000E+00
+          pressure:   9.7863E+06 [Pa]
+       temperature:    25.00 [C]
+       density H2O:  1001.47 [kg/m^3]
+ ln / activity H2O:   0.0000E+00  1.0000E+00    [---]
